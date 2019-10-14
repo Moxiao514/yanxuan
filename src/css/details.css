@@ -1,0 +1,596 @@
+/* 商品详情（放大镜和选购） */
+.productbg {
+    width:1090px;
+    margin:0 auto;
+    padding:0 0 80px;
+}
+/* 页面导航链接 */
+.crumb {
+    width:1090px;
+    height:14px;
+    padding-top:20px;
+    padding-bottom:20px;
+}
+/* 链接框架 */
+.crumb-name {
+    font-size:12px;
+    color:#333;
+}
+/* 下一目录图标 */
+.next {
+    display:inline-block;
+    margin:0 5px;
+    background-position: 0 -1093px;
+    height: 11px;
+    width: 5px;
+    background-image: -webkit-image-set(url(http://yanxuan-static.nosdn.127.net/hxm/yanxuan-web/p/20150730/style/img/x1/arrow-s8eb4a167a2-0736acf6d3.png) 1x,url(//yanxuan-static.nosdn.127.net/hxm/yanxuan-web/p/20150730/style/img/x2/arrow-s0b57ac21d9-8e71743ee5.png) 2x);
+    background-repeat: no-repeat;
+}
+/* 目录链接地址 */
+.crumb-url {
+    text-decoration: none;
+    columns: #333333;
+    font-size:12px;
+    color:#333;
+}
+.crumb-url:hover {
+    text-decoration: underline;
+}
+/* 商品图片和选购 */
+.detail {
+    width:1090px;
+    height:522px;
+}
+/* 左侧放大镜和下方小图片列表 */
+.m-slide {
+    width:430px;
+    float:left;
+    height:522px;
+}
+/* 展示图片  */
+.picswrap {
+    height:430px;
+    width:430px;
+    border: 1px solid #e8e8e8;
+    margin-right: 16px;
+    float:left;
+
+}
+/* 待放大的主图 */
+.smallpic {
+    width:428px;
+    height:428px;
+}
+.thumbImg {
+    display: block;
+    width: 428px;
+    height: 428px;
+    background-color: #f4f4f4;
+}
+/* 待展示小图片列表 */
+.piclist {
+    width:430px;
+    height:78px;
+    overflow: hidden;
+    padding-top: 14px;
+}
+.piclist ul {
+    list-style: none;
+    display:block;
+    width:430px;
+}
+.piclist ul li {
+    width: 78px;
+    height: 78px;
+    overflow: hidden;
+    float:left;
+
+}
+.piclist ul li a {
+    display: block;
+    width: 78px;
+    height: 78px;
+    border: 1px solid #e8e8e8;
+    color:#333;
+    text-decoration: none;
+    margin-left: 10px;
+}
+.piclist ul li a  img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-color: #f4f4f4;
+}
+
+/* 右侧选购加购物车 */
+.m-info {
+    float:right;
+    width:620px;
+    height:486px;
+    word-break: break-all;
+    word-wrap: break-word;
+}
+/* 商品介绍 */
+.intro {
+    widows: 620px;
+    height:47px;
+    margin-bottom:20px;
+}
+/* 商品名称 */
+.pro-name {
+    font-size:20px;
+    font-weight:700;
+    line-height:20px;
+    margin-bottom:7px;
+}
+/* 商品简要描述 */
+.desc {
+    width:520px;
+    height:20px;
+    font-size:14px;
+    line-height:20px;
+    color:#999;
+}
+/* 价格服务部分整体 */
+.u-formctr {
+    width:620px;
+    height:182px;
+    background-color: #f5f3ef;
+    border-top: 1px dotted #dedede;
+    border-bottom: 1px dotted #dedede;
+    padding: 0 0 13px;
+    line-height: 24px;
+    font-size: 13px;
+    position: relative;
+}
+/* 价格整行 */
+.pricebox {
+    width:620px;
+    height:50px;
+    font-family: "Microsoft Yahei","微软雅黑",verdana;
+}
+/* 左侧价格内容区 */
+.pr-left {
+    height:45px;
+    margin-bottom:5px;
+    float:left;
+}
+.label {
+    width: 55px;
+    font-size: 13px;
+    float: left;
+    color: #666;
+    margin-left: 10px;
+}
+.label-1 {
+    line-height:30px;
+    margin-top:16px;
+}
+/* 价格数字 */
+.rmbnum {
+    margin-top:13px;
+    height:30px;
+    float:left;
+}
+.rmb {
+    line-height:30px;
+    margin-left:0;
+    color:#d7282d;
+    font-size:18px;
+    font-weight:700;
+}
+.num {
+    line-height:30px;
+    margin-left:2px;
+    color:#d7282d;
+    font-size:28px;
+    font-weight:700;
+}
+/* 购物返整行 */
+.feedback {
+    width:610px;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    padding-left: 10px;
+    margin-bottom: 3px;
+    line-height: 24px;
+    font-size: 13px;
+
+}
+
+.feedback .left {
+    width:55px;
+    height:24px;
+    color:#666;
+    line-height:24px;
+    font-size:13px;
+}
+/* 右侧回馈金额 */
+.feedback .right {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+}
+.feedback .right ._price {
+    color: #C43C3B;
+    margin-right: 4px;
+    margin-left: 2px;
+}
+/* 反馈问号 */
+.feedback .right .questionMark {
+    width: 14px;
+    height: 14px;
+    background-image: url(http://yanxuan.nosdn.127.net/333a52f7d59a48d10cc04481cda7c31b.png);
+    background-size: contain;
+}
+
+/* 促销整行 */
+.fastsale {
+    height:28px;
+    margin-top:2px;
+    margin-bottom:3px;
+}
+/* 促销文字样式 */
+.label-2 {
+    line-height:28px;
+}
+/* 促销福利 */
+.saleline {
+    margin-left:65px;
+    height:28px;
+    padding-top:3px;
+}
+/* 促销链接 */
+.lowsalelink {
+    max-width: 431px;
+    display: inline-block;
+    word-break: normal;
+    word-wrap: normal;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    text-decoration: none;
+}
+/* 回购金卡 */
+.activityType {
+    margin-right: 10px;
+    font-size: 12px;
+    display: inline-block;
+    height: 20px;
+    line-height: 20px;
+    color: #fff;
+    padding: 0 5px;
+    font-size: 12px;
+    background-color: #e36844;
+}
+.lowsalelink span {
+   color:#333;
+}
+.lowsalelink:hover {
+    text-decoration: underline;
+}
+/* 配送地址 */
+.delivery {
+    width:620px;
+    height:24px;
+    margin-bottom: 3px;
+    line-height: 24px;
+    font-size: 13px;
+}
+.de-left {
+    float: left;
+    font-family: "Microsoft Yahei","微软雅黑",verdana;
+    color: #333;
+}
+/* 地址选择框 */
+.de-left .addresswrap {
+    width:124px;
+    height:24px;
+    z-index: 2;
+    margin-left: 13px;
+}
+.de-left .addresswrap .selectaddr {
+    width:78px;
+    height:22px;
+    height: 24px;
+    line-height: 22px;
+    padding: 0 14px;
+    margin: 0 10px 0 6px;
+    border: 1px solid #ccc;
+    background: #fff;
+    color: #666;
+    max-width: 380px;
+    z-index: 2;
+    font-size: 12px;
+}
+/* 地址选择框下拉箭头 */
+.de-left .addresswrap .selectaddr .addrdown {
+    display: inline-block;
+    background-position: 0 -634px;
+    height: 7px;
+    width: 12px;
+    background-image: -webkit-image-set(url(http://yanxuan-static.nosdn.127.net/hxm/yanxuan-web/p/20150730/style/img/x1/arrow-s8eb4a167a2-0736acf6d3.png) 1x,url(http://yanxuan-static.nosdn.127.net/hxm/yanxuan-web/p/20150730/style/img/x2/arrow-s0b57ac21d9-8e71743ee5.png) 2x);
+    background-repeat: no-repeat;
+}
+/* 分割线 */
+.u-formctr hr {
+    margin: 10px 20px 10px 10px;
+    overflow: hidden;
+    border: none;
+    height: 1px;
+    border-bottom: 1px dashed #d2d2d2;
+}
+
+/* 服务整行 */
+.server {
+    width:620px;
+    height:24px;
+    margin-top: 1px;
+    margin-bottom: 3px;
+}
+/* 右侧说明盒子 */
+.policyBox {
+    width:555px;
+    height:22px;
+    margin-left: 65px;
+    padding-top: 2px;
+}
+/* 单个说明 */
+.policyBox .sItem {
+    float: left;
+    cursor: pointer;
+    line-height: 20px;
+    color: #666;
+}
+/* 鼠标划过说明有下划线 */
+.sItem:hover {
+    text-decoration: underline;
+}
+
+
+/* 规格数量部分 */
+.stylenum {
+    width:620px;
+    height:94px;
+}
+/* 规格行 */
+.specProp {
+    width:610px;
+    height:45px;
+    margin-left: 10px;
+    margin-top: 30px;
+}
+.specProp .type {
+    display:block;
+    float: left;
+    font-size: 12px;
+    color: #666;
+    width: 54px;
+    line-height: 30px;
+}
+/* 规格选择框 */
+.specProp .cont {
+    width: 550px;
+    height:45px;
+    float: left;
+}
+/* 选择小框 */
+.specProp .cont .tabs {
+    list-style: none;
+}
+.tabs .tab-con {
+    width:82px;
+    height:28px;
+    float: left;
+    margin-right: 10px;
+    margin-bottom: 15px;
+    vertical-align: middle;
+    padding: 1px;
+}
+/* 选择框链接 */
+.tabs .tab-con .tab-sel {
+    width:48px;
+    height:24px;
+    display:block;
+    line-height: 26px;
+    border: 2px solid #b4a078;
+    color: #333;
+    margin-left: -1px;
+    margin-right: -1px;
+    text-decoration: none;
+    padding: 0 16px;
+    height: 28px;
+    position: relative;
+}
+/* 选择商品名 */
+.tab-sel .txt {
+    font-size: 12px;
+}
+/* 选中图标 */
+.tab-sel .selicon {
+    display:block;
+    position: absolute;
+    bottom:0;
+    right:0;
+    background-position: 0 -5712px;
+    height: 12px;
+    width: 12px;
+    background-image: url(http://yanxuan-static.nosdn.127.net/hxm/yanxuan-web/p/20150730/style/img/x1/icon-normal-s33e647f656-a21248af33.png);
+    background-repeat: no-repeat;
+}
+
+/* 数量行 */
+.f-clearfix {
+    width:620px;
+    height:49px;
+}
+.number {
+    margin-top: 10px;
+    margin-left: 10px;
+    float: left;
+    width:188px;
+    height:39px;
+}
+
+.numname {
+    line-height: 30px;
+    float: left;
+    font-size: 12px;
+    color: #666;
+    width: 54px;
+    height:30px;
+    white-space: normal;
+}
+/* 数量选择框  */
+.number .selbox {
+    margin-bottom: 3px;
+    float: left;
+    width:134px;
+    height:36px;
+}
+.number .selbox .u-selnum  {
+    border: 1px solid #ddd;
+    overflow: hidden;
+    display: inline-block;
+    width:132px;
+    height:30px;
+}
+/* 数量减少 */
+.u-selnum .less {
+    position: relative;
+    float: left;
+    width: 36px;
+    height: 30px;
+    line-height: 28px;
+    background: #fff;
+    border-right: 1px solid #ddd;
+}
+/* 数量显示输入框 */
+.u-selnum input {
+    box-sizing: border-box;
+    border-radius: 0;
+    border: 0;
+    width: 60px;
+    font-size: 12px;
+    text-align: center;
+    color: #333;
+    height: 30px;
+    float:left;
+    line-height: 28px;
+    background: #fff;
+}
+.hx {
+    background: #d3d3d3;
+    top: 15px;
+    left: 12px;
+    width: 10px;
+    position: absolute;
+    height:2px;
+}
+/* 添加数量 */
+.u-selnum .more {
+    border-left: 1px solid #ddd;
+    position: relative;
+    float: left;
+    width: 34px;
+    height: 30px;
+    line-height: 28px;
+    background: #fff;
+    cursor: pointer;
+}
+.u-selnum .sx {
+    top: 11px;
+    left: 16px;
+    height: 10px;
+    position: absolute;
+    width: 2px;
+    background: #999;
+}
+
+/* 购买加购物车部分 */
+.cartbtns {
+    width:608px;
+    height:50px;
+    margin-left: 12px;
+    margin-top: 30px;
+}
+/* 按钮公共样式 */
+.selfbtn {
+    width: 168px;
+    height: 50px;
+    line-height: 50px;
+    font-size: 18px;
+    margin-right: 10px;
+    display: inline-block;
+    text-decoration: none;
+    vertical-align: middle;
+    text-align: center;
+    border-radius: 2px;
+    border: 1px solid #b4a078;
+}
+/* 立即购买按钮 */
+.nowbuy {
+    display: inline-block;
+    color: #b4a078;
+    background-color: #f5f3ef;
+}
+
+/* 加入购物车 */
+.addcart {
+    color: #fff;
+    background-color: #b4a078;
+  
+    
+}
+/* 购物车图标 */
+.addcart .w-icon-cart {
+    display: inline-block;
+    margin: 12px 8px 0 0;
+    background-position: 0 -68px;
+    height: 21px;
+    width: 21px;
+    background-image: -webkit-image-set(url(http://yanxuan-static.nosdn.127.net/hxm/yanxuan-web/p/20150730/style/img/x1/cart-sb9c1d935ed-136a897db8.png) 1x,url(http://yanxuan-static.nosdn.127.net/hxm/yanxuan-web/p/20150730/style/img/x2/cart-s69c3d14a1a-b6b0eb144e.png) 2x);
+    background-repeat: no-repeat;
+}
+/* 收藏按钮 */
+.collectZone {
+    position: relative;
+    display: inline-block;
+    height: 49px;
+    width: 50px;
+    border: 1px solid #CCC;
+    overflow: hidden;
+    vertical-align: middle;
+    text-align: center;
+    cursor: pointer;
+}
+/* 收藏图标 */
+.collectZone  .top {
+    width:48px;
+    height: 24px;
+}
+.collectZone  .top .w-icon-star {
+        display: inline-block;
+    margin-top: 6px;
+    background-position: 0 -696px;
+    height: 15px;
+    width: 16px;
+    background-image: url(http://yanxuan-static.nosdn.127.net/hxm/yanxuan-web/p/20150730/style/img/x1/icon-normal-s33e647f656-a21248af33.png);
+    background-repeat: no-repeat;
+    text-align: center;
+    cursor: pointer;
+} 
+.collectZone .bottom {
+    height: 23px;
+    font-size: 13px;
+    line-height: 23px;
+    color: #999;
+    text-align: center;
+    cursor: pointer;
+}
+/* 尾部整体 */
+footer {
+    width:100%;
+    height:549px;
+}

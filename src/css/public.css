@@ -1,0 +1,370 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* 顶部（黑色） */
+header {
+    width: 100%;
+    height: 36px;
+    background: #333;
+}
+
+.header-inner {
+    width: 1090px;
+    height: 36px;
+    margin: 0 auto;
+    position: relative;
+}
+
+/* 顶部左侧喇叭消息通知 */
+.header-left {
+    float: left;
+    background: url(http://yanxuan.nosdn.127.net/d132c2561f18f1149d566a60d05fd9b7.gif) center left no-repeat;
+}
+
+.xiaoxi {
+    height: 36px;
+    line-height: 36px;
+    color: #b4a078;
+    font-size: 12px;
+    padding: 0 0 0 26px;
+}
+
+/* 鼠标移动到消息上方字体颜色发生改变 */
+.xiaoxi:hover {
+    color: #fff;
+    text-decoration: none;
+}
+
+/* 顶部右侧登录列表 */
+.header-right {
+    float: right;
+}
+
+.header-list li {
+    float: left;
+    list-style: none;
+}
+
+.header-li {
+    padding: 0 15px;
+    font-size: 12px;
+    height: 36px;
+    line-height: 36px;
+    color: #ccc;
+    border-right: 1px solid #5c5c5c;
+    text-decoration: none;
+}
+
+.app {
+    background: url(https://yanxuan-static.nosdn.127.net/hxm/yanxuan-component/p/20170601/style/img/x1/icon-yxtop-sbc152a7ee5-e7ebdc8b2c.png) 0px 1px;
+    display: block;
+    font-size: 12px;
+    height: 12px;
+    line-height: 12px;
+    margin-top: 12px;
+    color: #ccc;
+    padding: 0 0 0 11px;
+    margin-left: 15px;
+    cursor: pointer;
+}
+
+.xiajiantou {
+    display: inline-block;
+    width: 11px;
+    height: 5px;
+    background-image: url(https://yanxuan-static.nosdn.127.net/hxm/yanxuan-component/p/20170601/style/img/x1/icon-yxtop-sbc152a7ee5-e7ebdc8b2c.png);
+    transform: rotate(180deg);
+    background-position: 0px -424px;
+    margin-left: 5px;
+}
+
+/* 顶部导航下拉列表 */
+
+.caigou-list:hover .caigou {
+    display: block;
+}
+
+.kehu-list:hover .kehufuwu {
+    display: block;
+}
+
+/* 下拉显示列表 */
+.caigou {
+    position: absolute;
+    top: 36px;
+    right: 160px;
+    display: none;
+    width: 80px;
+    height: 124px;
+    background: #fff;
+    box-shadow: 0px 0px 3px #ccc;
+    z-index: 2;
+}
+
+.xiala-a {
+    width: 50px;
+    margin-left: 15px;
+    display: block;
+    padding: 12px 0;
+    text-decoration: none;
+    font-size: 12px;
+    color: #999;
+    border-bottom: 1px #ccc solid;
+    text-align: center;
+}
+
+.xiala-a:hover {
+    color: #B4A078;
+}
+
+/* 客户服务下拉列表 */
+.kehufuwu {
+    position: absolute;
+    top: 36px;
+    right: 55px;
+    display: none;
+    width: 80px;
+    height: 165px;
+    box-shadow: 0px 0px 3px #ccc;
+    background: #fff;
+    z-index: 2;
+}
+
+/* 鼠标滑过导航字体变化 */
+.header-list li:hover .header-li {
+    color: #fff;
+}
+
+/* 下载二维码 */
+.download {
+    display: none;
+    width: 140px;
+    height: 155px;
+    box-shadow: 0px 0px 3px #ccc;
+    position: absolute;
+    top: 36px;
+    right: -70px;
+    background: #fff;
+    z-index: 2;
+}
+
+.download img {
+    margin-top: 10px;
+    padding: 0 10px;
+}
+
+.xiazai {
+    color: #B4A078;
+    font-size: 12px;
+    text-align: center;
+}
+
+.down:hover .download {
+    z-index: 5 !important;
+    display: block;
+}
+
+/* logo搜索框部分 */
+/* 上半部分 */
+.logo-top {
+    width: 1090px;
+    height: 116px;
+}
+
+/* logo图标 */
+.title {
+    width: 100%;
+    height: 143px;
+}
+.main-yanxuan {
+    width:100%;
+    height:142px;
+    box-shadow: 0 0 3px 0 rgba(0,0,0,.2);
+}
+.yanxuan {
+    width: 1090px;
+    height: 142px;
+    margin: 0 auto;
+    position: relative;
+ 
+}
+
+.logo {
+    margin-top: 24px;
+    float: left;
+    width: 124px;
+    height: 60px;
+    background-image: -webkit-image-set(url(https://yanxuan-static.nosdn.127.net/hxm/yanxuan-component/p/20170601/style/img/x1/icon-yxtop-sbc152a7ee5-e7ebdc8b2c.png) 1x, url(https://yanxuan-static.nosdn.127.net/hxm/yanxuan-component/p/20170601/style/img/x2/icon-yxtop-s3776835b22-ff5967b298.png) 2x);
+    background-position: 0 308px;
+}
+
+/* 搜索框 */
+.headbox {
+    float: right;
+}
+
+.searchbox {
+    width: 532px;
+    height: 38px;
+    position: relative;
+    margin-top: 26px;
+    float: left;
+}
+
+.searchinput {
+    font-size: 14px;
+    width: 404px;
+    padding-left: 36px;
+    overflow: hidden;
+    height: 36px;
+    line-height: 36px;
+    border: 1px solid #B4A078;
+    border-bottom-left-radius: 18px;
+    border-top-left-radius: 18px;
+}
+
+.searchButton {
+    width: 90px;
+    height: 38px;
+    background-color: #B4A078;
+    border-top-right-radius: 19px;
+    border-bottom-right-radius: 19px;
+    cursor: pointer;
+    float: right;
+    color: #fff;
+    line-height: 38px;
+    text-align: center;
+    font-size: 16px;
+    letter-spacing: 1px;
+}
+
+.search-fdj {
+    background-image: -webkit-image-set(url(https://yanxuan-static.nosdn.127.net/hxm/yanxuan-component/p/20170601/style/img/x1/icon-yxtop-sbc152a7ee5-e7ebdc8b2c.png) 1x, url(https://yanxuan-static.nosdn.127.net/hxm/yanxuan-component/p/20170601/style/img/x2/icon-yxtop-s3776835b22-ff5967b298.png) 2x);
+    background-position: 0 -312px;
+    height: 14px;
+    width: 14px;
+    display: inline-block;
+    position: absolute;
+    top: 12px;
+    left: 20px;
+}
+
+/* 购物车 */
+.cartbutton {
+    position: relative;
+    margin-top: 26px;
+    margin-left: 49px;
+    float: right;
+    cursor: pointer;
+    width: 134px;
+    height: 36px;
+    border: 1px solid #B4A078;
+    border-radius: 19px;
+}
+
+.cart {
+    display: inline-block;
+    margin-top: 8px;
+    margin-left: 22px;
+    background-image: -webkit-image-set(url(https://yanxuan-static.nosdn.127.net/hxm/yanxuan-component/p/20170601/style/img/x1/icon-yxtop-sbc152a7ee5-e7ebdc8b2c.png) 1x, url(https://yanxuan-static.nosdn.127.net/hxm/yanxuan-component/p/20170601/style/img/x2/icon-yxtop-s3776835b22-ff5967b298.png) 2x);
+    background-position: 0 -114px;
+    height: 18px;
+    width: 18px;
+}
+
+.cartname {
+    color: #B4A078;
+    margin-left: 4px;
+    font-size: 14px;
+    height: 36px;
+    margin-top: -2px;
+    text-decoration: none;
+}
+
+.cartnumber {
+    display: inline-block;
+    background-image: -webkit-image-set(url(https://yanxuan-static.nosdn.127.net/hxm/yanxuan-component/p/20170601/style/img/x1/icon-yxtop-sbc152a7ee5-e7ebdc8b2c.png) 1x, url(https://yanxuan-static.nosdn.127.net/hxm/yanxuan-component/p/20170601/style/img/x2/icon-yxtop-s3776835b22-ff5967b298.png) 2x);
+    margin-top: -1px;
+    color: #fff;
+    text-align: center;
+    line-height: 20px;
+    background-position: 0 -51px;
+    height: 19px;
+    width: 19px;
+}
+
+/* 搜索热词列表  */
+.hotkeyword {
+    position: absolute;
+    top: 64px;
+    height: 18px;
+    left: 395px;
+}
+
+.hotul li {
+    list-style: none;
+    float: left;
+}
+
+.hot-a {
+    text-decoration: none;
+    display: inline-block;
+    color: #999;
+    padding: 0 10px;
+    border-right: 1px solid #ccc;
+    cursor: pointer;
+    line-height: 12px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    max-width: 444px;
+    font-size: 12px;
+}
+
+/* 下半部分导航 */
+.logo-bottom {
+    width: 1090px;
+    height: 24px;
+}
+
+.navleft {
+    float: left;
+    border-right: 1px solid #ccc;
+}
+
+.navleft li {
+    float: left;
+    list-style: none;
+}
+
+.navright {
+    float: left;
+}
+
+.navright li {
+    float: left;
+    list-style: none;
+}
+
+.navkey {
+    color: #000;
+    padding-bottom: 4px;
+    text-decoration: none;
+    font-size: 14px;
+    margin: 0 25px;
+    font-weight: 600;
+    font-family: "Microsoft Yahei","微软雅黑",verdana;
+}
+
+.navkey:hover {
+    border-bottom: 3px solid #b4a078;
+    color: #b4a078;
+}
+
+.xiahua {
+    width: 100%;
+    height: 1px;
+    box-shadow: 1px 1px 1px #ccc;
+}

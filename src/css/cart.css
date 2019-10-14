@@ -1,0 +1,388 @@
+/* 中心框架 */
+.main-wrap {
+    width:1090px;
+    height:965px;
+    margin:0 auto;
+}
+/* 领券 */
+.cartGetCoupons {
+    background: #fff;
+    width:1090px;
+    height:40px;
+}
+/* 领券内框架 */
+.CouponWrap {
+    width: 1090px;
+    margin: 0 auto;
+    width: 1090px;
+    height: 38px;
+    margin-top: 10px;
+    border: 1px solid #eaeaea;
+    line-height: 38px;
+}
+/* 标题 */
+.Couponstitle {
+    float: left;
+    font-size: 14px;
+    line-height: 38px;
+    height:38px;
+}
+/* 优惠券图标 */
+.Coupons-icon {
+    display: inline-block;
+    margin: 9px 17px 0 12px;
+    background-position: 0 -105px;
+    height: 20px;
+    width: 28px;
+    background-image: url('../img/cart-icon.png');
+    background-repeat: no-repeat;
+}
+.Couponstitle span {
+    font-size: 14px;
+    line-height: 40px;
+    color: #333;
+}
+/* 领券选择框 */
+.checkCoupons {
+    padding: 0 26px;
+    height: 38px;
+    line-height: 38px;
+    text-align: center;
+    color: #fff;
+    background-color: #E36844;
+    cursor: pointer;
+    float: right;
+    position: relative;
+}
+.checkCoupons span{
+    line-height: 38px;
+    text-align: center;
+    color: #fff;
+    font-size: 14px;
+}
+/*  领券选择框图标*/
+.checkCoupons-icon {
+    position: absolute;
+    display: inline-block;
+    top: 16px;
+    right: 9px;
+    background-position: 0 -820px;
+    height: 7px;
+    width: 12px;
+    background-image:url('../img/left-right.png');
+    background-repeat: no-repeat;
+}
+/* 购物车商品部分 */
+.CartWrap {
+    padding-bottom: 40px;
+    margin-top: 10px;
+    width:1090px;
+}
+/* 内部框架 */
+.CartInner {
+    position: relative;
+}
+/* 商品信息表头 */
+.InfoTableHead {
+    width:1088px;
+    height:20px;
+    margin-bottom: 20px;
+    padding: 12px 0;
+    border: 1px solid #ddd;
+    background-color: #f5f5f5;
+}
+/* （全选）复选框 */
+.SelectCheck{
+    text-align: left;
+    float: left;
+    font-size: 13px;
+    width: 139px;
+    margin-left: 20px;
+}
+.SelectCheck input{
+    width: 18px;
+    height: 18px;
+    vertical-align: middle!important;
+    display: inline-block;
+    border: 0;
+    background-position: 0 -84px;
+    background-image:url("../img/selected.png");
+    background-repeat: no-repeat;
+
+}
+.InfoTableHead .all {
+color: #333;
+margin-left: 14px;
+vertical-align: middle;
+font-size: 13px;
+}
+/* 商品信息 */
+.IfnoIntr {
+    text-align: left;
+    float: left;
+    width: 300px;
+    font-size: 13px;
+}
+
+/* 单价 */
+.IfonPrice {
+    float: left;
+    text-align: center;
+    font-size: 13px;
+    width: 180px;
+}
+/* 数量 */
+.IfonNum {
+    float: left;
+    text-align: center;
+    font-size: 13px;
+    width: 170px;
+}
+/* 小计 */
+.IfonTotal {
+    text-align: right;
+    float: left;
+    width: 120px;
+    padding-right: 30px;
+    font-size: 13px;
+}
+/* 操作 */
+.IfonDone {
+    text-align: left;
+    padding-left: 31px;
+    float: left;
+    font-size: 13px;
+    width: 98px;
+}
+/* 购物车主体（空时） */
+.cart-empty {
+    width:1090px;
+    height:696px;
+    position: relative;
+    border: 1px solid #ddd;
+}
+/* 中心内容区域 */
+.m-emptyStatus {
+    width:1088px;
+    height:264px;
+    margin-top: 200px;
+    margin: 150px auto 0;
+    text-align: center;
+}
+/* 购物车图片 */
+.emptyCartImg {
+    background-position: 0 -570px;
+    background-image:-webkit-image-set(url(https://yanxuan-static.nosdn.127.net/hxm/yanxuan-web/p/20150730/style/img/x1/icon-empty-s545adfbb0c-16fa2eeb53.png) 1x,url(https://yanxuan-static.nosdn.127.net/hxm/yanxuan-web/p/20150730/style/img/x2/icon-empty-s223d65534a-d12ecf748d.png) 2x);
+    background-repeat: no-repeat;
+    height: 180px;
+    width: 180px;
+    margin:0 auto;
+}
+.emptyText {
+    font-size: 16px;
+    color: #999;
+    height:24px;
+    text-align: center;
+}
+/* 选择按钮 */
+.btnLine {
+    margin-top: 20px;
+    display: block;
+    text-align: center;
+}
+/* 登录 */
+.button-primary {
+    display: inline-block;
+    margin-right: 18px;
+    height: 40px;
+    width: 98px;
+    font-size: 16px;
+    line-height: 38px;
+    color: #fff;
+    border: 1px solid #b4a078;
+    background-color: #b4a078;
+    border-radius: 2px;
+    padding: 0;
+    letter-spacing: normal;
+   text-decoration: none;
+}
+/* 继续逛 */
+.button-ghost {
+    display: inline-block;
+    height: 40px;
+    width: 98px;
+    font-size: 16px;
+    line-height: 38px;
+    color: #b4a078;
+    border: 1px solid #b4a078;
+    background-color: #f5f3ef;
+    border-radius: 2px;
+    text-align: center;
+    text-decoration: none;
+}
+
+
+
+/* 总计付款部分 */
+.CartDone {
+    /* position: fixed;
+    z-index: 2;
+    bottom: 0; */
+    position: relative;
+    width: 100%;
+    max-width: 1090px;
+    font-size: 14px;
+    background-color: #f5f5f5;
+    border: 1px solid #ddd;
+    height: 68px;
+}
+
+/* 删除清空部分 */
+.w-chkbox{
+  
+    position: absolute;
+    top: 24px;
+    left: 22px;
+}
+.w-chkbox span {
+    margin-left: 14px;
+    vertical-align: middle;
+    font-size: 14px;
+    font-family: "Microsoft Yahei","微软雅黑",verdana;
+    color: #333;
+}
+.w-chkbox input {
+    width: 18px;
+    height: 18px;
+    vertical-align: middle!important;
+    position: relative;
+    display: inline-block;
+    border: 0;
+    background-position: 0 -84px;
+    background-image: url("../img/selected.png");
+    background-repeat: no-repeat;
+
+}
+
+/* 批量删除 */
+.DelProduct {
+    margin-left: 30px;
+    vertical-align: middle;
+    color: #333;
+    text-decoration: none;
+    font-size: 14px;
+}
+/* 清空失效商品 */
+
+/* 右侧下单按钮 */
+.CartDownWrap{
+    width:139px;
+    height:69px;
+    float: right;
+    display: inline;
+}
+.CartDownInner{
+    border-radius: 0;
+    width: 140px;
+    height: 70px;
+    margin-top: -1px;
+    margin-right: -1px;
+    line-height: 50px;
+    font-size: 18px;
+    color: #fff;
+    border: 1px solid #ccc;
+    background-color: #ccc;
+    text-align: center;
+    cursor: pointer;
+}
+/* 中间价格部分 */
+.CartPriceMiddle {
+    width:948px;
+    height:0;
+    margin-right: 140px;
+}
+/* 右侧应付金额 */
+.CartPriceRight{
+    padding: 0 30px;
+    height: 94px;
+    float: right;
+}
+
+
+/* 应付金额 */
+.shouldPayMoney{
+    line-height: 22px;
+    margin-top: 12px;
+    font-size: 14px;
+    color: #333;
+}
+.PayMoneyTxt{
+    width:70px;
+    height:22px;
+    margin-right: 20px;
+    font-size: 14px;
+    display: inline-block;
+    vertical-align: top;
+}
+/* 金额 */
+.moneyInfo {
+    font-size: 22px;
+    font-weight: 700;
+    color: #BE4141;
+    line-height: 22px;
+}
+.moneyInfo .priceNum{
+    font-size: 22px;
+    line-height: 22px;
+    position: relative;
+    top: 2px;
+    bottom: 2px;
+    font-weight: 700;
+    color: #BE4141;
+}
+.moneyInfo .priceNum span {
+    font-size: 22px;
+    line-height: 22px;
+    font-weight: 700;
+    color: #BE4141;
+}
+/* 左侧合计优惠 */
+.CartCheap {
+    margin: 10px 0;
+    padding: 0 30px;
+    border-right: 1px solid #ddd;
+    line-height: 14px;
+    height: 50px;
+    font-size: 14px;
+    color: #999!important;
+}
+/* 商品合计 */
+.line {
+    padding-top: 6px;
+    text-align: right;
+    overflow: hidden;
+    height: 32px;
+    font-size: 14px;
+    line-height: 14px;
+}
+.labeltotal {
+    text-align: right;
+    font-size: 14px;
+    line-height: 14px;
+    color: #999!important;
+}
+.amount {
+    display: inline-block;
+    text-align: right;
+    float: right;
+    width: 100px;
+    font-size: 14px;
+    line-height: 14px;
+    color: #999!important;
+}
+.amount span {
+    text-align: right;
+    font-size: 14px;
+    color: #999!important;
+}
+

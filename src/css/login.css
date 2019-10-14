@@ -1,0 +1,310 @@
+/* banner部分 */
+.banner {
+    width:100%;
+    height:600px;
+    background:url("https://yanxuan.nosdn.127.net/6c20940c7b36612b0ed4d7b0a8a4aafe.jpg") center no-repeat;
+    position: relative;
+}
+/* 登录表单 */
+.loginform {
+    width:383px;
+    height:480px;
+    position: absolute;
+    top:80px;
+    right:130px;
+    background:#fff;
+}
+.loginmessage {
+    width:383px;
+    height:420px;
+}
+/* 表单头部 */
+.login-header {
+    width:306px;
+    margin:30px auto;
+}
+/* tab登录方式切换按钮 */
+.logina {
+    padding:0 30px;
+    color: #333;
+    font-size: 18px;
+    text-decoration: none;
+}
+/* 手机登录盒子 */
+.phonelogin {
+    width:304px;
+    height:339px;
+    margin:0 auto;
+}
+/* 密码验证登录 */
+.passwordyz {
+    width:298px;
+    height:16px;
+    padding:0 0 6px 0;
+}
+.loginyzm {
+    color: #666;
+    text-decoration: none;
+    float: right;
+    padding: 0 34px;
+    font-size:12px;
+}
+/* 电话号输入框整体 */
+.telinput {
+    width: 302px;
+    height: 36px;
+    border: 1px solid #e8e8e8;
+    border-radius: 2px;
+}
+/* 手机图标 */
+.phonecion {
+    width:21px;
+    height:24px;
+    margin-top:6px;
+    padding-right:7px;
+    border-right:1px solid #e8e8e8;
+    display:inline-block;
+    float: left;
+    background: url(https://yanxuan.nosdn.127.net/49f4a785eb9ded4831d8cb0ede642b3e.png) 8px 5px no-repeat;
+}
+/* 手机号输入框 */
+.inputtel {
+    width:214px;
+    height:36px;
+    line-height:36px;
+    padding-left:8px;
+    font-size:14px;
+    background:#fff;
+    color:#333;
+    border:none;
+    position: relative;
+    float: left;
+}
+/* 滑块拖动框 */
+.dragwrap {
+    width:304px;
+    height:40px;
+    line-height:40px;
+    border-radius:2px;
+    text-align: center;
+    color:#45494c;
+    box-sizing:border-box;
+    font-size:14px;
+    position: relative;
+    border: 1px solid #e4e7eb;
+    background-color: #f7f9fa;
+    margin-top:16px;
+}
+/* 拖动的滑块盒子 */
+.dragbox {
+    width:40px;
+    height:38px;
+    border-radius: 2px;
+    position: absolute;
+    top:0;
+    left:0;
+    background-color: #fff;
+    box-shadow: 0 0 3px rgba(0,0,0,.3);
+    cursor: pointer;
+    transition: background .2s linear;
+}
+/* 拖动箭头样式 */
+.jiantou {
+    position: absolute;
+    top: 50%;
+    margin-top: -6px;
+    left: 50%;
+    margin-left: -6px;
+    width: 14px;
+    height: 10px;
+    background-image: url(https://cstaticdun.126.net//2.11.4/images/icon_light.c72616a.png);
+    background-position: 0 -26px;
+    background-size: 32px 544px;
+}
+.dragbox:hover {
+    background-color: #1991fa;
+}
+/* 短信验证码 */
+.messagewrap {
+    width:300px;
+    height:38px;
+    margin-top:15px;
+}
+.message {
+    width:200px;
+    height: 36px;
+    border:1px solid #e8e8e8;
+    line-height:36px;
+    border-radius:2px;
+    position: relative;
+    font-size:14px;
+    background:#fff;
+    float:left;
+    padding-left:8px;
+}
+.messageyzm {
+    width:88px;
+    height:36px;
+    border:1px solid #e8e8e8;
+    line-height:36px;
+    background-color:#eee;
+    color:#333;
+    font-size:14px;
+    text-align: center;
+    cursor: pointer;
+    display: inline-block;
+}
+.messageyzm:hover {
+    color:#b4a078;
+}
+/* 手机号快捷登录按钮 */
+.telephonelogin {
+    width:300px;
+    height:48px;
+    margin-top:40px;
+    margin-bottom:11px;
+    text-align:center;
+    color:#fff;
+    background: #b4a078;
+    font-size: 18px;
+    line-height: 48px;
+    border-radius: 2px;
+    border:none;
+}
+/* 服务条款复选框 */
+.servse {
+    border: 0;
+    background: url(https://yanxuan.nosdn.127.net/e74788b490a1d89a808b83b84826a731.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    margin-top: 1px;
+    width: 18px;
+    height: 18px;
+    display: block;
+    float: left;
+    margin-right: 5px;
+}
+.agreecheck {
+    cursor: pointer;
+    width:14px;
+    height:14px;
+    background:#fff;
+    padding-left: 0;
+    color: #333;
+    border:none;
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 42px;
+    opacity: 0;
+}
+/* 服务条款 */
+.servsetext {
+    width:276px;
+    height:20px;
+    padding:0 0 4px;
+    margin-left:30px;
+    position: relative;
+    color:#999;
+}
+.iagree {
+    color:#999;
+    font-size:12px;
+}
+.tiaokuan {
+    text-decoration: none;
+    line-height:20px;
+    color:#333;
+    cursor: pointer;
+    font-size:12px;
+}
+/* 其他登录方式 */
+.otherlogin {
+    height: 60px;
+    background: #F5F3EF;
+    overflow: hidden;
+    width: 383px;
+    bottom: -1px;
+    left: 0px;
+    position: absolute;
+}
+/* 其它方式列表 */
+.olist {
+    margin: 0 0 0 32px;
+    padding-top: 18px;
+    height: 50px;
+    text-align: left;
+    float: left;
+    position: relative;
+}
+.weixin {
+    position: absolute;
+    width: 35px;
+    height: 30px;
+    top:12px;
+    left:50%;
+    margin: 0 4px;
+    cursor: pointer;
+    text-decoration: none;
+    background-image:-webkit-image-set(url(//yanxuan.nosdn.127.net/77f98b239f0d848eb54151c4ad6eab96.png) 1x,url(//yanxuan.nosdn.127.net/dc695e3f7b2ae5237b52b6a526ce105f.png) 2x);
+    background-position: 0px 0px;
+}
+.weixin:hover {
+    background-position: 0px -40px;
+}
+.qq {
+    position: absolute;
+    width: 35px;
+    height: 30px;
+    top: 15px;
+    left: 65px;
+    margin-left: -15px;
+    background-repeat: no-repeat;
+    background-image:-webkit-image-set(url(//yanxuan.nosdn.127.net/77f98b239f0d848eb54151c4ad6eab96.png) 1x,url(//yanxuan.nosdn.127.net/dc695e3f7b2ae5237b52b6a526ce105f.png) 2x);
+    background-position: 0px -245px;
+}
+.qq:hover {
+    background-position: 0px -290px;
+}
+.weibo {
+    position: absolute;
+    width: 35px;
+    height: 30px;
+    top: 15px;
+    left: 105px;
+    margin-left: -15px;
+    background-repeat: no-repeat;
+    background-image:-webkit-image-set(url(//yanxuan.nosdn.127.net/77f98b239f0d848eb54151c4ad6eab96.png) 1x,url(//yanxuan.nosdn.127.net/dc695e3f7b2ae5237b52b6a526ce105f.png) 2x);
+    background-position: 0px -123px;
+}
+.weibo:hover {
+    background-position: 0px -202px;
+}
+.wangyi {
+    position: absolute;
+    width: 35px;
+    height: 30px;
+    top: 15px;
+    left: 150px;
+    margin-left: -15px;
+    background-repeat: no-repeat;
+    background-image:-webkit-image-set(url(//yanxuan.nosdn.127.net/77f98b239f0d848eb54151c4ad6eab96.png) 1x,url(//yanxuan.nosdn.127.net/dc695e3f7b2ae5237b52b6a526ce105f.png) 2x);
+    background-position: 0px -82px;
+}
+.wangyi:hover {
+    background-position: 0px -162px;
+}
+.question {
+    float:right;
+    height:12px;
+    text-decoration: none;
+    cursor: pointer;
+    color:#999;
+    font-size:12px;
+    line-height:16px;
+    margin:25px 20px 0 5px;
+}
+/* 尾部整体 */
+footer {
+    width:100%;
+    height:549px;
+}
