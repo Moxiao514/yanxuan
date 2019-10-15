@@ -4,6 +4,10 @@
     margin:0 auto;
     padding:0 0 80px;
 }
+.CrumbName {
+    font-size: 12px;
+    color: #333;
+}
 /* 页面导航链接 */
 .crumb {
     width:1090px;
