@@ -535,6 +535,10 @@ line-height:20px;
 }
 
 /* 商品区域 */
+.ProductOrigin {
+    width: 1090px;
+    height: 530px;
+}
 .showContainer {
     width: 1090px;
     height: 530px;
@@ -1647,4 +1651,49 @@ footer {
     width: 24px;
     background-image: url("../img/nav-icon.png");
     background-repeat: no-repeat;
+}
+/* 左侧楼梯导航 */
+.LeftLouTi {
+    width:110px;
+    height:390px;
+    background:#fff;
+    position: fixed;
+    top:100px;
+    left:0px;
+    z-index:99;
+    border:1px solid #b4a078;
+    display: none;
+}
+.LeftLouTi ul li:last-child {
+   border:none;
+}
+.LeftLouTi ul li {
+    display:block;
+    list-style:none;
+    font-size: 14px;
+    text-align: center;
+    position: relative;
+    cursor: pointer;
+}
+/* 选中时的样式 */
+
+.LeftLouTi ul .selectnow span {
+    background: #b4a078;
+    color: #fff;
+    display: block;
+}
+/* 未选中前的样式 */
+.LeftLouTi ul li span{
+    display:block;
+    padding:5px 0;
+    text-align:center;
+    border-bottom:1px solid #b4a078;
+    color:#b4a078;
+}
+/* 回到顶部样式 */
+.LeftLouTi ul .returntop {
+    display:block;
+    padding:5px 0;
+    text-align:center;
+    color:#b4a078;
 }

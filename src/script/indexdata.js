@@ -65,49 +65,103 @@ require(['config'], function () {
             })(),
             // 人气推荐
             popular: (function () {
-                const popProduct = document.querySelector('.showContainer');
+                const popProduct = document.querySelector('.SH-1');
                 const phpurl = 'http://10.31.155.25/yanxuan/php/';
                 $.ajax({
                     url: phpurl + 'popular.php',
                     dataType: 'json'
                 }).done(function (poppro) {
+                   
+                        var strhtml = "";
 
-                    var strhtml = "";
-
-                    for (let value of poppro) {
-                        strhtml += `
-                            <div class="popularItem p-items">
-                            <div class="hd">
-                                <a title="${value.title}" target="_blank" class="imgWrap"
-                                    href="http://10.31.155.25/yanxuan/src/details.html?sid=${value.sid}">
-                                    <div style="width:100%;height:100%;">
-                                        <img alt="${value.title}" class="lazy" data-original="${value.url}"
-                                            src="${value.url}">
-                                    </div>
-                                    <div class="colorNum" style="display:none;"></div>
-                                </a>
-                            </div>
-                            <div class="bd">
-                                <div class="prdtTags" style="margin-bottom:0"></div>
-                                <h4 class="name">
-                                    <a href="http://10.31.155.25/yanxuan/src/details.html?sid=${value.sid}" title="${value.title}" target="_blank">
-                                        <span>&nbsp;</span>
-                                        <span>${value.title}</span>
+                        for (let value of poppro) {
+                            strhtml += `
+                                <div class="popularItem p-items">
+                                <div class="hd">
+                                    <a title="${value.title}" target="_blank" class="imgWrap"
+                                        href="http://10.31.155.25/yanxuan/src/details.html?sid=${value.sid}">
+                                        <div style="width:100%;height:100%;">
+                                            <img alt="${value.title}" class="lazy" data-original="${value.url}"
+                                                src="${value.url}">
+                                        </div>
+                                        <div class="colorNum" style="display:none;"></div>
                                     </a>
-                                </h4>
-                                <p class="price">
-                                    <span class="retailPrice">
-                                        <span>¥</span>
-                                        <span>${value.price}</span>
-                                    </span>
-                                </p>
+                                </div>
+                                <div class="bd">
+                                    <div class="prdtTags" style="margin-bottom:0"></div>
+                                    <h4 class="name">
+                                        <a href="http://10.31.155.25/yanxuan/src/details.html?sid=${value.sid}" title="${value.title}" target="_blank">
+                                            <span>&nbsp;</span>
+                                            <span>${value.title}</span>
+                                        </a>
+                                    </h4>
+                                    <p class="price">
+                                        <span class="retailPrice">
+                                            <span>¥</span>
+                                            <span>${value.price}</span>
+                                        </span>
+                                    </p>
+                                </div>
                             </div>
-                        </div>
-                        `;
+                            `;
+    
+                        }
+                       
+                        popProduct.innerHTML += strhtml;
+                   
+                    
+                   
+                });
 
-                    }
+            })(),
+            //   热销总榜
+            hotsale: (function () {
+                const hotProduct = document.querySelector('.SH-2');
+                const phpurl = 'http://10.31.155.25/yanxuan/php/';
+                $.ajax({
+                    url: phpurl + 'hot.php',
+                    dataType: 'json'
+                }).done(function (hotpro) {
+                   
+                        var strhtml = "";
 
-                    popProduct.innerHTML = strhtml;
+                        for (let value of hotpro) {
+                            strhtml += `
+                                <div class="popularItem p-items">
+                                <div class="hd">
+                                    <a title="${value.title}" target="_blank" class="imgWrap"
+                                        href="http://10.31.155.25/yanxuan/src/details.html?sid=${value.sid}">
+                                        <div style="width:100%;height:100%;">
+                                            <img alt="${value.title}" class="lazy" data-original="${value.url}"
+                                                src="${value.url}">
+                                        </div>
+                                        <div class="colorNum" style="display:none;"></div>
+                                    </a>
+                                </div>
+                                <div class="bd">
+                                    <div class="prdtTags" style="margin-bottom:0"></div>
+                                    <h4 class="name">
+                                        <a href="http://10.31.155.25/yanxuan/src/details.html?sid=${value.sid}" title="${value.title}" target="_blank">
+                                            <span>&nbsp;</span>
+                                            <span>${value.title}</span>
+                                        </a>
+                                    </h4>
+                                    <p class="price">
+                                        <span class="retailPrice">
+                                            <span>¥</span>
+                                            <span>${value.price}</span>
+                                        </span>
+                                    </p>
+                                </div>
+                            </div>
+                            `;
+    
+                        }
+                       
+                        hotProduct.innerHTML += strhtml;
+                   
+                    
+                   
                 });
 
             })(),
