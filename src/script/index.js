@@ -1,4 +1,4 @@
-                //调用第三方模块，首页效果
+//调用第三方模块，首页效果
 
 
 //调用config配置模块
@@ -18,7 +18,7 @@ require(['config'], function () {
             })(),
             louti: (function () {
                 // var leftlounav = $('.LeftLouTi');//楼梯整体
-                
+
                 // var returntop = $('.returntop');//回到顶部
                 // var newproducts = $('.newproducts');//新品首发
                 // var popular = $('.popular');//人气推荐
@@ -47,17 +47,17 @@ require(['config'], function () {
                 //点击楼梯，显示右侧对应的图层
                 // console.log($('.indexcates .g-row').not('.m-expert'));
                 // console.log($('.LeftLouTi li').not('.Scroll'));
-                
+
                 this.$('.LeftLouTi li').not('.Scroll').on('click', function () {
                     $(this).addClass('selectnow').siblings('li').removeClass('selectnow');
                     //获取每一个楼层的top值
-                    let $loucengtop = _this.$('.indexcates .g-row').not('.m-expert').eq( $(this).index()).offset().top;
+                    let $loucengtop = _this.$('.indexcates .g-row').not('.m-expert').eq($(this).index()).offset().top;
 
                     $('html,body').animate({
                         scrollTop: $loucengtop
                     });
                 });
-               
+
 
 
 
@@ -123,8 +123,23 @@ require(['config'], function () {
 
 
             })(),
+            topnav: (function () {
 
 
+                $(window).on('scroll', function () {
+                    let $top = $(window).scrollTop();
+                   // $('title').html($top);
+                    if ($top >= 800) {
+                        $('.hidden-nav').stop(true).animate({
+                            top: 0
+                        });
+                    } else {
+                        $('.hidden-nav').stop(true).animate({
+                            top: -60
+                        })
+                    }
+                });
+            })()
 
         }
     });

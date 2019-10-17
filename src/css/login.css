@@ -67,6 +67,39 @@
     float: left;
     background: url(https://yanxuan.nosdn.127.net/49f4a785eb9ded4831d8cb0ede642b3e.png) 8px 5px no-repeat;
 }
+.emailcion {
+    display: inline-block;
+    width: 21px;
+    height: 24px;
+    margin-top: 0px;
+    padding-right: 7px;
+    margin-top: 7px;
+    margin-left: 8px;
+    border-right: 1px solid #e8e8e8;
+    display:inline-block;
+    float: left;
+    background: url(https://yanxuan.nosdn.127.net/d6bd29fcf2096cb4c5d338e0fce13919.png) 0 2px no-repeat;
+}
+.change-email {
+    position: relative;
+    width: 300px;
+    height: 15px;
+    line-height: 16px;
+    font-size: 12px;
+}
+.keyicon{
+    background:url(https://yanxuan.nosdn.127.net/178e29b95f152a8aa6490f4f7032a8e8.png) 0 2px no-repeat;
+    display: inline-block;
+    width: 21px;
+    height: 24px;
+    margin-top: 0px;
+    padding-right: 7px;
+    border-right: 1px solid #e8e8e8;
+    display:inline-block;
+    float: left;
+    margin-top: 7px;
+    margin-left: 8px;
+}
 /* 手机号输入框 */
 .inputtel {
     width:214px;
