@@ -9,8 +9,8 @@
     <link rel="stylesheet" href="css/public.css">
     <link rel="stylesheet" href="css/index.css">
     <!-- 引入主模块 -->
-    <!-- <script src="script/indexmain.js" type="module"></script> -->
-    <script src="script/require.js" defer async="true" data-main="script/indexmain.js"></script>
+    <script src="script/require.js" data-main="script/config.js" id="current-page" target-module="script/indexmain.js" defer async="true" ></script>
+   
 </head>
 
 <body>
@@ -175,7 +175,7 @@
         <div class="banner-inner">
             <button class="slick-prev bannerbtn"></button>
             <div class='slick-list'>
-                <div class="img-wrap">
+                <div class="img-wrap" style="opacity: 1;">
                     <a class="imglink" target="_blank" title="专题 断货榜V3-长期"
                         href="https://you.163.com/topic/v1/pub/pluaaDOZKM.html?_stat_referer=index&amp;_stat_area=banner_1">
                         <img class="bannerimg" alt="专题 断货榜V3-长期"
@@ -226,7 +226,7 @@
             </div>
             <button class="slick-next bannerbtn"></button>
             <ul class="slick-dots">
-                <li class="slick-slide"></li>
+                <li class="slick-slide active"></li>
                 <li class="slick-slide"></li>
                 <li class="slick-slide"></li>
                 <li class="slick-slide"></li>
@@ -404,7 +404,10 @@
             <div class="TimeContainer">
                 <!-- 左侧定时器区域-->
                 <div class="falseTime">
-
+                    <div class="screenEndTips">
+                        距离结束还剩
+                    </div>
+                    <div class="m-countDown"></div>
                 </div>
                 <!-- 右侧商品 -->
                 <div class='timeProduct'>

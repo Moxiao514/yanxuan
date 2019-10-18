@@ -41,6 +41,11 @@ require(['config'], function () {
                     } else {
                         _this.$('.LeftLouTi').hide();
                     }
+
+
+
+
+
                 });
 
 
@@ -128,20 +133,127 @@ require(['config'], function () {
 
                 $(window).on('scroll', function () {
                     let $top = $(window).scrollTop();
-                   // $('title').html($top);
-                    if ($top >= 800) {
+
+                    if ($top >= 200) {
                         $('.hidden-nav').stop(true).animate({
                             top: 0
                         });
+
                     } else {
                         $('.hidden-nav').stop(true).animate({
                             top: -60
                         })
                     }
                 });
-            })()
+            })(),
+            lunbo: (function () {
+                // 小按钮
+                $lunbobtns = $('.banner-inner .slick-dots .slick-slide');
+                //console.log($lunbobtns)
+                // 轮播图片
+                $lunbopics = $('.img-wrap');
+                // 向上切换按钮
+                $lunboPrev = $('.slick-prev');
+
+                // 向下切换按钮
+                $lunboNext = $('.slick-next');
+                //console.log($lunboNext)
+                var num = 0;
+                var $timer = null;
+
+                // 点击向上切换按钮
+                $lunboPrev.click(function () {
+                    num--;
+                    if (num < 0) {
+                        num = $lunbobtns.length - 1;
+                    }
+                    change();
+                });
+
+
+                // 点击向下切换按钮
+                $lunboNext.click(function () {
+                    num++;
+                    if (num > $lunbobtns.length - 1) {
+                        num = 0;
+                    }
+                    change();
+                });
+
+
+
+                // 点击小按钮
+                $lunbobtns.click(function () {
+                    num = $(this).index();
+                    change();
+                });
+
+
+
+                // 自动轮播
+
+                $timer = setInterval(function () {
+
+                    $('.slick-next').click();
+                }, 3000);
+
+
+
+                // 封装透明度改变函数
+                function change() {
+                    $lunbobtns.eq(num).addClass('active').siblings().removeClass('active');
+                    $lunbopics.eq(num).stop(true, true).animate({
+                        opacity: 1
+                    }).siblings('.img-wrap').stop(true, true).animate({
+                        opacity: 0
+                    });
+                }
+
+
+
+            })(),
+
+            changepage: (function () {
+
+                $lunboPrev = $('.newItemSlick .slickprev');
+                //console.log($lunboPrev)
+                $lunboNext = $('.newItemSlick .slicknext');
+
+                $picbox = $('.allSlickImg');
+                //console.log($picbox)
+                $lunboNext.click(function () {
+                    $picbox.css('left', '-1100px');
+                });
+                $lunboPrev.click(function () {
+                    $picbox.css('left', '0px');
+                });
+
+
+            })(),
+            time: (function () {
+
+                function djs() {
+                    var currenttime = new Date();
+                    var futuretime = new Date('2019-10-30 18:00:00');//未来的时间
+                    var time = parseInt((futuretime - currenttime) / 1000);//剩下的时间--s
+
+                    var hour = parseInt(time % 86400 / 3600);//小时
+                    var min = parseInt(time % 3600 / 60);//分
+                    var sec = time % 60//秒
+                    var times = hour + ':' + min + ':' + sec;
+                    return times;
+                }
+                const timebox = document.querySelector('.m-countDown');
+                timebox.innerHTML = djs();
+                window.setInterval(function () {
+                    timebox.innerHTML = djs();
+                }, 1000);
+
+
+            })(),
 
         }
+
     });
 });
 

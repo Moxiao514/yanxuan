@@ -47,7 +47,7 @@
 
 /* banner图片列表 */
 .slick-list {
-    width: 8720px;
+    width: 1920px;
     height: 420px;
     position: relative;
     z-index: 0;
@@ -60,6 +60,10 @@
     width: 1920px;
     height: 420px;
     display: inline-block;
+    opacity: 0;
+    position: absolute;
+    top:0;
+    left:0;
 }
 
 /* 图片对应的链接 */
@@ -97,6 +101,13 @@
     height: 8px;
     margin: 0 8px 10px;
     cursor: pointer;
+    z-index:99;
+}
+.slick-dots .active {
+    width: 10px;
+    height: 10px;
+    background: rgba(112, 56, 19, 0.877);
+   
 }
 
 /* 中间商品整体 */
@@ -304,7 +315,27 @@
     width: 1100px;
     height: 344px;
 }
-
+.screenEndTips {
+    margin-top:110px;
+    margin-bottom: 18px;
+    font-size: 18px;
+    color: #615548;
+    line-height: 22px;
+    height: 22px;
+    text-align: center;
+}
+.m-countDown{
+    height: 40px;
+    margin-bottom: 50px;
+    text-align: center;
+    width: 180px;
+    color: #fff;
+    margin:0 auto;
+    font-size: 18px;
+    line-height: 40px;
+    background-color: #615548;
+    text-align: center;
+}
 /* 轮播按钮 */
 .slickbtns {
     width: 50px;
@@ -539,6 +570,7 @@ line-height:20px;
     width: 1090px;
     height: 530px;
 }
+
 .showContainer {
     width: 1090px;
     height: 530px;
@@ -585,10 +617,11 @@ line-height:20px;
     height: 20px;
     text-align: center;
     display: block;
-    width:370px;
-    height:20px;
+    width: 370px;
+    height: 20px;
 }
-.popularItem:first-child .bd .price .retailPrice span{
+
+.popularItem:first-child .bd .price .retailPrice span {
     font-size: 18px;
     line-height: 13px;
     color: #d4282d;
@@ -765,16 +798,11 @@ line-height:20px;
     overflow: hidden;
     margin: 3px 0;
 }
+
 /* .time-left .picIn div img {
     width:180px;
     height:180px;
 } */
-
-
-
-
-
-
 
 /* 右边介绍 */
 .time-right {
@@ -1526,15 +1554,15 @@ footer {
 /* 顶部导航（滑动一定距离后才出现的） */
 .hidden-nav {
     padding-right: 0;
-    position: fixed;
-    top: 0;
-    left: 0;
+   
     width: 100%;
     height: 50px;
     background-color: #fff;
     box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.2);
     z-index: 10;
-    display: none;
+    position: fixed;
+    top: -60px;
+    left: 0px;
 }
 
 /* 内部框架 */
@@ -1652,29 +1680,33 @@ footer {
     background-image: url("../img/nav-icon.png");
     background-repeat: no-repeat;
 }
+
 /* 左侧楼梯导航 */
 .LeftLouTi {
-    width:110px;
-    height:390px;
-    background:#fff;
+    width: 110px;
+    height: 390px;
+    background: #fff;
     position: fixed;
-    top:100px;
-    left:0px;
-    z-index:99;
-    border:1px solid #b4a078;
+    top: 100px;
+    left: 0px;
+    z-index: 99;
+    border: 1px solid #b4a078;
     display: none;
 }
+
 .LeftLouTi ul li:last-child {
-   border:none;
+    border: none;
 }
+
 .LeftLouTi ul li {
-    display:block;
-    list-style:none;
+    display: block;
+    list-style: none;
     font-size: 14px;
     text-align: center;
     position: relative;
     cursor: pointer;
 }
+
 /* 选中时的样式 */
 
 .LeftLouTi ul .selectnow span {
@@ -1682,18 +1714,20 @@ footer {
     color: #fff;
     display: block;
 }
+
 /* 未选中前的样式 */
-.LeftLouTi ul li span{
-    display:block;
-    padding:5px 0;
-    text-align:center;
-    border-bottom:1px solid #b4a078;
-    color:#b4a078;
+.LeftLouTi ul li span {
+    display: block;
+    padding: 5px 0;
+    text-align: center;
+    border-bottom: 1px solid #b4a078;
+    color: #b4a078;
 }
+
 /* 回到顶部样式 */
 .LeftLouTi ul .returntop {
-    display:block;
-    padding:5px 0;
-    text-align:center;
-    color:#b4a078;
+    display: block;
+    padding: 5px 0;
+    text-align: center;
+    color: #b4a078;
 }

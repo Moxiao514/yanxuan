@@ -8,7 +8,9 @@
     <meta name="description" content="网易严选秉承网易一贯的严谨态度，深入世界各地，严格把关所有商品的产地、工艺、原材料，甄选居家、厨房、饮食等各类商品，力求给你最优质的商品。" />
     <link rel="stylesheet" href="css/public.css">
     <link rel="stylesheet" href="css/login.css">
-    <script src="script/require.js" defer async="true" data-main="script/loginmain.js"></script>
+
+    <script src="script/require.js" data-main="script/config.js" id="current-page" target-module="script/loginmain.js" defer async="true" ></script>
+   
 </head>
 
 <body>
@@ -69,11 +71,13 @@
                             <input type="text" name="" id="" class="searchinput" placeholder="爆款 全棉针织条纹四件套">
                             <div class="searchButton">搜索</div>
                         </div>
-                        <div class="cartbutton">
-                            <span class="cart"></span>
-                            <span class="cartname">购物车</span>
-                            <span class="cartnumber">0</span>
-                        </div>
+                        <a href="cart.html" target="_blank">
+                            <div class="cartbutton">
+                                <span class="cart"></span>
+                                <span class="cartname">购物车</span>
+                                <span class="cartnumber">0</span>
+                            </div>
+                        </a>
                     </div>
                     <div class="hotkeyword">
                         <ul class="hotul">
